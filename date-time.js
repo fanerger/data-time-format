@@ -34,7 +34,7 @@ function xxDate (type) {
     return { today, firstDay, lastWeek, yesterday }
   }
 }
-function xxmonth () {
+function xxMonth () {
   let dateObj = new Date()
   let [year, month] = [dateObj.getFullYear(), dateObj.getMonth() + 1]
   if (month <= 9) month = `0${month}`
@@ -53,7 +53,7 @@ function date (Vue) {
   // 年-月-日 时：分：秒 today、yesterday、lastWeek、firstDay
   Vue.prototype.$dataTime = xxDate('time')
   // 年-月 currentMonth、lastMonth
-  Vue.prototype.$xxmonth = xxmonth()
+  Vue.prototype.$xxMonth = xxMonth()
 }
 
 export default date
