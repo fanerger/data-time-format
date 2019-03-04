@@ -2,5 +2,5 @@
 ### 今天、昨天、本月第一天、上一周、本月、上个月
 
 ##### 封装成vue插件方便调用
-import dateTime from '@/utils/date-time'
+import dateTime from '@/utils/date-time'<br>
 Vue.use(dateTime)
